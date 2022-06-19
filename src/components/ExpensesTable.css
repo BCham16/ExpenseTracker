@@ -1,0 +1,38 @@
+
+.ExpensesContainer{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  background-color: lightpink;
+  margin: auto;
+  margin-top: 2%;
+  text-align: center;
+}
+
+span{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+th{
+  border: solid 2px black;
+  width: 100px;
+  border-collapse: initial;
+  border-spacing: 1rem;
+}
+
+tr{
+  border: solid 1px black;
+}
+
+td{
+  padding: 10px;
+}
+
+.deleteItemButton{
+  cursor: pointer;
+}

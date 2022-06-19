@@ -36,5 +36,7 @@
 
 #formSubmitButton:active{
   box-shadow: none;
-  color: yellow;
+  padding: 6px;
+  border: solid black 3px;
+  margin-right: 7px;
 }
