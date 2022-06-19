@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "./App.css";
 import ControlsForm from "./components/ControlsForm";
 import ExpensesTable from "./components/ExpensesTable";
@@ -25,25 +25,27 @@ const tempData = [
 ];
 
 function App() {
-
-  const [expenses, setExpenses] = useState(tempData)
+  const [expenses, setExpenses] = useState(tempData);
 
   const onFormSubmitHandler = (enteredExpenseData) => {
     const expenseDataWithID = {
       ...enteredExpenseData,
-      id: Math.random().toString()
-    }
+      id: Math.random().toString(),
+    };
     setExpenses((prevExpenses) => {
       return [expenseDataWithID, ...prevExpenses];
-    })    
-    };
-  
+    });
+  };
+
+  const onDeleteHandler = (id) => {
+    setExpenses(expenses.filter((expenses) => expenses.id !== id ))
+  };
 
   return (
     <div className="App">
       <div className="titleBar">Expense Tracker</div>
       <ControlsForm onFormSubmit={onFormSubmitHandler} />
-      <ExpensesTable items={expenses} />
+      <ExpensesTable items={expenses} onDelete={onDeleteHandler} />
     </div>
   );
 }

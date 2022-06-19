@@ -2,7 +2,7 @@ import "./ExpensesTable.css";
 import IndividualItemsGenerator from "./IndividualItemsGenerator";
 import TableHeader from "./TableHeader";
 
-const ExpensesTable = (props) => {
+const ExpensesTable = ({ items, onDelete }) => {
 
   return (
     <div className="ExpensesContainer">
@@ -10,12 +10,14 @@ const ExpensesTable = (props) => {
       <table>
         <TableHeader />
         <tbody>
-          {props.items.map((expense) => (
+          {items.map((expense) => (
             <IndividualItemsGenerator
               key={expense.id}
+              id={expense.id}
               expenseName={expense.expenseName}
               expenseAmount={expense.expenseAmount}
               expenseDate={expense.expenseDate}
+              onDelete={onDelete}
             />
           ))}
         </tbody>
