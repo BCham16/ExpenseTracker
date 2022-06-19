@@ -15,14 +15,14 @@ span{
 }
 
 table{
-  border-collapse: collapse;
+  padding: 5px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
 }
 
 th{
   border: solid 2px black;
-  width: 100px;
-  border-collapse: initial;
-  border-spacing: 1rem;
 }
 
 tr{
