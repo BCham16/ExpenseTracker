@@ -1,7 +1,11 @@
 
 .titleBar{
+  margin-top: 1%;
+  padding-bottom: 8px;
   display: flex;
   flex-direction: row;
-  background-color: lightpink;
   justify-content: center;
+  font-size: 28px;
+  color: aqua;
+  font-weight: bolder;
 }

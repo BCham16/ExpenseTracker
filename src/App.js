@@ -32,9 +32,11 @@ function App() {
       ...enteredExpenseData,
       id: Math.random().toString(),
     };
-    setExpenses((prevExpenses) => {
-      return [expenseDataWithID, ...prevExpenses];
-    });
+    if (expenseDataWithID.expenseAmount !==''){
+      setExpenses((prevExpenses) => {
+        return [expenseDataWithID, ...prevExpenses];
+    })
+    };
   };
 
   const onDeleteHandler = (id) => {

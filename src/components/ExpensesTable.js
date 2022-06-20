@@ -6,7 +6,7 @@ const ExpensesTable = ({ items, onDelete }) => {
 
   return (
     <div className="ExpensesContainer">
-      <span>Expenses Table</span>
+      <p>Expenses Table</p>
       <table>
         <TableHeader />
         <tbody>

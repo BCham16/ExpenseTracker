@@ -14,7 +14,7 @@ const IndividualItemsGenerator = ({
   });
 
   return (
-    <tr>
+    <tr className="rows">
       <td>{date}</td>
       <td>{expenseName}</td>
       <td>${expenseAmount}</td>

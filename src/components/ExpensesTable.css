@@ -4,30 +4,39 @@
   flex-direction: column;
   width: fit-content;
   min-width: 500px;
-  background-color: lightpink;
   margin: auto;
   margin-top: 2%;
   text-align: center;
 }
 
-span{
-  margin-top: 2%;
-  margin-bottom: 2%;
+p{
+  padding: 5px;
+  border-style: solid;
+  border-bottom: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0px;
+  background-color: black;
+  color:aqua;
+  font-size: 20px;
 }
 
 table{
+  background-color: black;
+  color: aqua;
   padding: 5px;
-  border-style: solid;
-  border-color: black;
-  border-width: 2px;
+  border: solid 2px aqua;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.75);
 }
 
 th{
-  border: solid 2px black;
+  border: solid 2px aqua;
+  background-color:rgb(60, 60, 60);
+  min-width: 100px;
 }
 
 tr{
-  border: solid 1px black;
+  background-color: rgba(60,60,60,0.5);
 }
 
 td{
@@ -36,4 +45,10 @@ td{
 
 .deleteItemButton{
   cursor: pointer;
+  font-weight: bold;
+}
+
+.deleteItemButton:hover{
+  font-weight: 1000;
+  color: red;
 }

@@ -58,7 +58,7 @@ const ControlsForm = (props) => {
           onChange={amountChangeHandler}
         />
         <button type="Submit" id="formSubmitButton">
-          Submit
+          Add Item
         </button>
       </form>
     </div>
