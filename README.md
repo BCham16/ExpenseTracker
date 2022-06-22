@@ -8,6 +8,7 @@
  This was my first project using React. There was a lot of time spent understanding core concepts such as state, props, 
  and JSON stringify for local data storage. 
  Overall it was a big adventure and undertaking, but it was a great learning experience!
+ --ToDo: Move input forms to a Modal & debug local storage useEffect
  
   ### Try it live [here](https://brandons-expense-tracker.herokuapp.com/)
  
