@@ -4,6 +4,7 @@ import "./ControlsForm.css";
 const ControlsForm = (props) => {
   const [selectedDate, setSelectedDate] = useState("");
   const [enteredItemName, setEnteredItemName] = useState("");
+  const [enteredLocation, setEnteredLocation] = useState("");
   const [enteredAmount, setEnteredAmount] = useState("");
 
   const itemNameChangeHandler = (event) => {
@@ -13,6 +14,10 @@ const ControlsForm = (props) => {
   const amountChangeHandler = (event) => {
     setEnteredAmount(event.target.value);
   };
+
+  const locationChangeHandler = (event) => {
+    setEnteredLocation(event.target.value);
+  }
 
   const dateChangeHandler = (event) => {
     setSelectedDate(event.target.value);
@@ -24,13 +29,15 @@ const ControlsForm = (props) => {
     const expenseData = {
       expenseName: enteredItemName,
       expenseAmount: enteredAmount,
+      expenseLocation: enteredLocation,
       expenseDate: new Date(selectedDate),
     };
 
     props.onFormSubmit(expenseData);
-    setEnteredAmount('');
-    setEnteredItemName('');
-    setSelectedDate('');
+    setEnteredAmount("");
+    setEnteredItemName("");
+    setEnteredLocation("");
+    setSelectedDate("");
   };
 
   return (
@@ -50,6 +57,13 @@ const ControlsForm = (props) => {
           value={enteredItemName}
           onChange={itemNameChangeHandler}
         />
+        <input
+          className="inputField"
+          id="locationInput"
+          placeholder="Enter Location"
+          value={enteredLocation}
+          onChange={locationChangeHandler}
+        ></input>
         <input
           className="inputField"
           id="amountInput"

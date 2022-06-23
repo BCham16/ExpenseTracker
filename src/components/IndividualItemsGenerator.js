@@ -4,6 +4,7 @@ const IndividualItemsGenerator = ({
   expenseDate,
   expenseName,
   expenseAmount,
+  expenseLocation,
   id,
   onDelete,
 }) => {
@@ -17,6 +18,7 @@ const IndividualItemsGenerator = ({
     <tr className="rows">
       <td>{date}</td>
       <td>{expenseName}</td>
+      <td>{expenseLocation}</td>
       <td>${expenseAmount}</td>
       <td className="deleteItemButton" onClick={() => onDelete(id)}>
         X

@@ -1,0 +1,12 @@
+.addExpenseButton{
+  background-color: aqua;
+  color: black;
+  font-weight: bolder;
+  font-size: 22px;
+  padding: 0px;
+  margin: none;
+}
+
+.filler{
+  background-color: black;
+}

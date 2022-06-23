@@ -1,3 +1,4 @@
+import AddExpense from "./AddExpense";
 import "./ExpensesTable.css";
 import IndividualItemsGenerator from "./IndividualItemsGenerator";
 import TableHeader from "./TableHeader";
@@ -18,8 +19,10 @@ const ExpensesTable = ({ items, onDelete }) => {
               expenseAmount={expense.expenseAmount}
               expenseDate={expense.expenseDate}
               onDelete={onDelete}
+              expenseLocation={expense.expenseLocation}
             />
           ))}
+          <AddExpense />
         </tbody>
       </table>
     </div>
