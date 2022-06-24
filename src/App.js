@@ -65,13 +65,14 @@ function App() {
 
   return (
     <div className="App">
-      <div className="titleBar">Expense Tracker</div>
+      <div className="titleBar">
+        <Modal open={openModal} onFormSubmit={onFormSubmitHandler} />
+      </div>
       <ExpensesTable
         items={expenses}
         onDelete={onDeleteHandler}
         onAddExpense={() => setOpenModal(true)}
       />
-      <Modal open={openModal} onFormSubmit={onFormSubmitHandler} />
     </div>
   );
 }
