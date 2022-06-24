@@ -2,7 +2,7 @@
 
   ### Fully functional Expense Tracker developed with React
   
- <img src= "Screenshot.png" width="400">
+ <img src= "Screenshot.png" width="410">
 
  ## Summary
  This was my first project using React. There was a lot of time spent understanding core concepts such as state, props, 
