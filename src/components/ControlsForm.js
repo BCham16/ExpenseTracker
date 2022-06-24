@@ -30,7 +30,12 @@ const ControlsForm = (props) => {
       expenseName: enteredItemName,
       expenseAmount: enteredAmount,
       expenseLocation: enteredLocation,
-      expenseDate: new Date(selectedDate),
+      expenseDate: selectedDate.toLocaleString("en-US", {
+        month: "2-digit",
+        day: "2-digit",
+        year: "numeric",
+      }
+      )
     };
 
     props.onFormSubmit(expenseData);

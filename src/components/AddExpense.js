@@ -1,11 +1,13 @@
 import React from "react";
-import "./AddExpense.css"
+import "./AddExpense.css";
 
-const AddExpense = () => {
+const AddExpense = ({ onAddExpense }) => {
   return (
     <tr>
       <td className="filler"></td>
-      <td colSpan="3" className="addExpenseButton">+</td>
+      <td colSpan="3" className="addExpenseButton" onClick={onAddExpense}>
+        +
+      </td>
       <td className="filler"></td>
     </tr>
   );

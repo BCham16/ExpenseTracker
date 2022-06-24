@@ -3,8 +3,7 @@ import "./ExpensesTable.css";
 import IndividualItemsGenerator from "./IndividualItemsGenerator";
 import TableHeader from "./TableHeader";
 
-const ExpensesTable = ({ items, onDelete }) => {
-
+const ExpensesTable = ({ items, onDelete, onAddExpense }) => {
   return (
     <div className="ExpensesContainer">
       <p>Expenses Table</p>
@@ -22,7 +21,7 @@ const ExpensesTable = ({ items, onDelete }) => {
               expenseLocation={expense.expenseLocation}
             />
           ))}
-          <AddExpense />
+          <AddExpense onAddExpense={onAddExpense} />
         </tbody>
       </table>
     </div>
